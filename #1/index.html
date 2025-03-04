@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Complete the following verification</h2>
+        <p>Move the dark square onto the white square by clicking on the arrows</p>
+        <div class="slider">
+            <span class="arrow" onclick="move(0, -1)">&#9664;</span>
+            <div class="bar">
+                <div class="square white" style="left: 0px;"></div>
+                <div class="square dark" style="left: 180px;"></div>
+            </div>
+            <span class="arrow" onclick="move(0, 1)">&#9654;</span>
+        </div>
+        <div class="slider">
+            <span class="arrow" onclick="move(1, -1)">&#9664;</span>
+            <div class="bar">
+                <div class="square white" style="left: 100px;"></div>
+                <div class="square dark" style="left: 160px;"></div>
+            </div>
+            <span class="arrow" onclick="move(1, 1)">&#9654;</span>
+        </div>
+        <div class="slider">
+            <span class="arrow" onclick="move(2, -1)">&#9664;</span>
+            <div class="bar">
+                <div class="square white" style="left: 220px;"></div>
+                <div class="square dark" style="left: 40px;"></div>
+            </div>
+            <span class="arrow" onclick="move(2, 1)">&#9654;</span>
+        </div>
+        <h2 id="congrats" class="hidden">Congratulations!</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #fce4ec, #dff4f6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(180deg, #fff7fc, #f8f9fa);
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #463d45;
+}
+
+p {
+    color: #666;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.arrow:first-child {
+    margin-right: 20px;
+}
+
+.arrow:last-child {
+    margin-left: 20px;
+}
+
+.bar {
+    width: 350px;
+    height: 50px;
+    background: linear-gradient(90deg, #faebe1, #f7d9c4);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 3px 3px 6px rgba(0,0,0,0.05);
+}
+
+.square {
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    border-radius: 10px;
+    transition: left 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.1),
+              inset 2px 2px 4px rgba(255,255,255,0.2);
+}
+
+.dark {
+    background: linear-gradient(135deg, #75b9c5, #bb9bc1);
+}
+
+.white {
+    background: linear-gradient(135deg, #f8feff, #f7f0ff);
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #e4c9d1;
+    background: linear-gradient(145deg, #d0d9ff, #ffd5f2);
+    box-shadow: 
+            0 4px 12px rgba(108,91,255,0.25),
+            inset 2px 2px 4px rgba(255,255,255,0.2);
+    transition: background-color 0.3s;
+    border-radius: 12px;
+    width: 50px;        
+    height: 50px;       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow:hover {
+    background: linear-gradient(#d3f8fc,#ffeaf3);
+    transform: scale(1.05);
+    box-shadow: 4px 4px 16px rgba(119,139,235,0.3);
+}
+
+.hidden {
+    display: none;
+}
