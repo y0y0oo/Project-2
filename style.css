@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ffe5e5, #effaff);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    background: linear-gradient(160deg, #ff6b6b, #f8e90f, #4ecdc4);
+    -webkit-background-clip: text;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-clip: text;
+    color: transparent;
+}
+
+#colorDisplay {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 2rem 0;
+    border: 4px solid rgba(255,255,255,0.2);
+    margin-top: 20px;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 2;
+}
+
+#colorDisplay:hover {
+    transform: scale(1.05);
+}
+
+#soundVisualization {
+    width: 320px;
+    height: 120px;
+    border-radius: 16px;
+    background: var(--glass-bg);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.color {
+    width: 39vw;
+    height: 20vw;
+    background-size: contain;
+    background-position: no-repeat;
+    background-image: url("./Snipaste_2025-02-12_21-01-06.png");
+}
